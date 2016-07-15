@@ -1,4 +1,4 @@
-# ng2-C3I COMMAND and CONTROL
+# mr-C3I COMMAND and CONTROL
 
 ### Mark Addinall - 2016
 ### Brisbane Australia
