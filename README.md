@@ -34,7 +34,7 @@ and to consider the architectures for up-coming builds.
 
 So far this technology mix is looking the best of the modern architectures.
 
-![alt text](c`3i.png "Sample mapping page")
+![alt text](c3i.png "Sample mapping page")
 
 This is from Intelligent Aerospace, July 2016.
 
