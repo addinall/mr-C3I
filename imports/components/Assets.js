@@ -1,6 +1,6 @@
 // CAPTAIN SLOG
 // vim: set expandtab tabstop=4 shiftwidth=4 autoindent smartindent:
-// File         : item.js 
+// File         : assets.js 
 // System       : mr-C3I 
 // Date         : July  2016
 // Author       : Mark Addinall
@@ -13,28 +13,37 @@
 //
 // -------------------------------
 import React, { PropTypes } from 'react';
+import Add from './Add';
+import List from './List';
 
-function Item(props) {
+function Assets(props) {
   const {
-    _id,
-    text,
+    loading,
+    items,
+    onSubmit,
     onRemove,
   } = props;
 
   return (
-    <li className="list-group-item">
-        <input type="button" value="x" onClick={() => onRemove(_id)} />  - {text}
-    </li>
+    <div>
+      <Add onSubmit={onSubmit} />
+      <List
+        loading={loading}
+        items={items}
+        onRemove={onRemove}
+      />
+    </div>
   );
 }
 
-Item.propTypes = {
-  _id: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+Assets.propTypes = {
+  loading: PropTypes.bool.isRequired,
+  items: PropTypes.array.isRequired,
+  onSubmit: PropTypes.func.isRequired,
   onRemove: PropTypes.func.isRequired,
 };
 
-export default Item;
+export default Assets;
 
-//--------------  EOF  ------------------------
+//-----   EOF ----------------------------
 //

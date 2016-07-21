@@ -1,5 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Todos from '/imports/containers/Todos';
+import Assets from '/imports/containers/Assets';
 
-Meteor.startup(() => render(<Todos />, document.getElementById('root')));
+Meteor.startup(() => render(<Assets />, document.getElementById('root')));
